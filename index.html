@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          background-color: #000;
+          color: #fff;
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          max-height: 100vh;
+          overflow-y: auto;
+        }
+    
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .button-container-kiri {
+        position: fixed;
+        left: 5px;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        .button-container-kanan {
+        position: fixed;
+        right: 20px;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        .qckButton {
+        margin: 5px; /* Kembalikan margin ke nilai sebelumnya */
+          padding: 8px 5px; /* Kembalikan padding ke nilai sebelumnya */
+          background-color: #666;
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 80%;
+    }
+    
+        .box {
+          background-color: #444;
+          padding: 15px; /* Mengurangi padding untuk jarak yang lebih dekat */
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+    
+        .box-label {
+          color: #fff;
+          font-size: 14px;
+          margin-top: 5px; /* Mengurangi jarak antara label dan tombol */
+          margin-bottom: 5px; /* Mengurangi jarak antara label dan tombol */
+        }
+    
+        .button {
+          margin: 5px; /* Kembalikan margin ke nilai sebelumnya */
+          padding: 10px 20px; /* Kembalikan padding ke nilai sebelumnya */
+          background-color: #666;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          width: 100%;
+          box-sizing: border-box;
+        }
+    
+        .button:hover, .qckButton:hover {
+          background-color: #888;
+        }
+    
+        .button-row {
+          display: flex;
+        }
+      </style>
+</head>
+<body>
+  <div class="container">
+<h2 style="text-align: center">Instagram</h2>
+    <div class="button-container-kiri">
+        <button class="qckButton" onclick="copyText('ICONNET siap melayani sepenuh hati, dengan Lathif ada yang bisa dibantu?')">Greet - TIDT</button>
+	<button class="qckButton" onclick="copyText('ICONNET siap melayani sepenuh hati, dengan Lathif yang akan membantu Kakak.')">Greet - IDT</button>
+	<button class="qckButton" onclick="copyText('Terima kasih atas kesediaannya telah menunggu.')">TQ<br/>1x24jam</button>
+	<button class="qckButton" onclick="copyText('Mohon maaf atas keterlambatan respons kami..')">TQ<br/>>24jam</button>
+        <button class="qckButton" onclick="copyText('Mohon dibantu untuk verifikasi data pelanggan terlebih dahulu:\n\nID pelanggan:\nNama:\nEmail:\nNomor telepon:')">Verif</button>
+<button class="qckButton" onclick="copyText('Bisa dibantu informasikan untuk pelanggannya terdaftar atas nama siapa?')">NmPel?</button>
+
+        <button class="qckButton" onclick="copyText('Saat ini kami masih menunggu jawaban Kakak XXX, ada lagi yang dapat kami bantu?')">Remind</button>
+        <button class="qckButton" onclick="copyText('Mohon maaf dikarenakan tidak ada jawaban, maka percakapan ini akan kami akhiri. Apabila masih terdapat pertanyaan atau membutuhkan bantuan lainnya, silakan menghubungi kami kembali. Terima kasih telah menghubungi Layanan Instagram ICONNET, selamat malam.')">FEnd</button>        
+	<button style="margin-top: 50px" class="qckButton" onclick="copyText('Mohon maaf atas keterlambatan respons kami, Kak XXX.')">Sorry<br/>Lama</button>
+
+        <button class="qckButton" onclick="copyText('Kami akan lakukan pengecekan terlebih dahulu. Mohon kesediaannya menunggu.')">Wait<br/>General</button>		
+	<button class="qckButton" onclick="copyText('Baik Kak, kami akan buatkan laporannya terlebih dahulu. Mohon kesediaannya menunggu.')">Wait<br/>BuatLaporan</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Mohon maaf, kami masih memerlukan waktu untuk melakukan pengecekan. Mohon kesediaannya untuk menunggu.')">Wait<br/>Lagi</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Terima kasih atas kesediaannya telah menunggu, Kak XXX.')">TQ<br/>For Waiting</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Agar dapat kami cek dengan optimal, mohon dibantu kembali melampirkan foto dalam bentuk biasa, bukan foto sekali lihat (temporary) pada DM Instagram.')">Foto<br/>Temporer</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Berikut kami informasikan beberapa pilihan kanal pelayanan ICONNET:\n\n- Telepon: 150678\n- WhatsApp: 0811-1200-2123\n- DM Instagram: @iconnet.here\n- Email: cc.iconnet@iconpln.co.id\n- Live Chat: Aplikasi MyICON+')">Layanan<br/>Contact Center</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Mohon maaf, dikarenakan sebelumnya terdapat antrian percakapan dengan pengguna lain yang lebih dulu menghubungi, maka kami baru dapat tersambung dengan Kakak saat ini.')">Maaf<br/>Lama</button>
+
+        <button style="margin-top: 30px" class="qckButton" onclick="copyText('Demi proses penanganan tetap efektif dan kondusif, mohon komunikasi dapat disampaikan secara kooperatif dan profesional. Dengan begitu, kami dapat membantu lebih maksimal dalam menindaklanjuti kebutuhan pelanggan.')">Tegur<br/>Mitra</button>
+
+
+
+      </div>
+      
+      <div class="button-container-kanan">        
+        <button class="qckButton" onclick="copyText('Apakah informasi yang kami sampaikan sudah jelas?')">Jelas?</button>    
+        <button class="qckButton" onclick="copyText('Ada lagi yang dapat kami bantu?')">More?</button>
+               <button class="qckButton" style="margin-top:40px;" onclick="copyText('Dengan senang hati ya Kak.')">My<br/>Pleasure</button>
+               <button class="qckButton" margin-top:40px;" onclick="copyText('Senang bisa membantu Kakak.')">Nevermind</button>
+
+	<button class="qckButton" style="margin-top:40px;" onclick="copyText('Mohon tidak memberikan tip atau tambahan biaya kepada petugas kami.\n\nTerima kasih telah menghubungi Contact Center ICONNET, kami senantiasa melayani sepenuh hati. Sehat selalu.')">All<br/>Campaign</button>
+
+        <button class="qckButton" style="margin-top:40px;" onclick="copyText('Baik, jika tidak ada perihal lain yang dapat dibantu, kami mohon izin untuk mengakhiri sesi percakapan ini.')">Izin<br/>Tutup</button>
+        <button class="qckButton" onclick="copyText('Mohon tidak memberikan tip atau tambahan biaya kepada petugas kami.')">No Tip</button>
+        <button class="qckButton" onclick="copyText('Mohon kesediaannya untuk memberikan rating atas pelayanan kami.')">Rating</button>
+<button class="qckButton" onclick="copyText('Terima kasih telah menghubungi Layanan Instagram ICONNET, selamat malam.')">TQ</button>
+      </div>
+    
+<div class="box" style="width:100%">
+<div class="button-row">
+<button class="button" onclick="copyText('Terima kasih atas kesetiaannya terhadap layanan ICONNET, Kak XXX.')">Terima Kasih Kesetiaannya</button>
+                  </div> 
+<div class="button-row">
+ <button class="button" onclick="copyText('Mohon maaf atas kendala internet yang dialami, Kak XXX.')">Maaf Internet</button>
+<button class="button" onclick="copyText('Mohon maaf atas ketidaknyamanan yang dialami ya Kak.')">Maaf Tidak Nyaman</button>
+                  </div> 
+            </div>
+
+
+    <!-- No Internet -->  
+    <div class="box">
+      <div class="button-row">
+        <button class="button" onclick="copyText('Mohon dibantu informasinya, apa kendala internet yang dialami saat ini:\n\n1. Tidak dapat diakses\n2. Koneksi lambat\n3. Koneksi putus-putus\n4. Lainnya (Mohon dijelaskan)')">Apa Kendala Internet yang Dialami?</button>
+</div>
+      <div class="box-label">No Internet/Loss</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Sebelumnya, bisa bantu informasikan sejak kapan terjadinya kendala tersebut?')">Kapan?</button>
+        <button class="button" onclick="copyText('Mohon informasinya, apakah Kakak sudah mencoba restart modem (mematikan lalu menyalakan kembali)?')">Restart?</button>
+<button class="button" onclick="copyText('Mohon informasinya, apakah saat ini terdapat indikator lampu merah pada modemnya?')">Merah?</button>
+</div>
+<div class="button-row">
+	<button style="height:60px; width:70%;" class="button" onclick="copyText('Baik, mohon dibantu memberikan data berikut agar kami sertakan pada laporan:\n- Foto bagian belakang modem yang menampilkan SN (Serial Number)\n- Nomor telepon alternatif selain yang terdaftar')">Minta Foto SN dan Nomor Alternatif</button>
+	<button style="height:60px; width:30%;" class="button" onclick="copyText('Baik, terima kasih atas lampiran dan informasinya.')">TQ SN + ALT</button>
+</div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Mohon dibantu melampirkan foto bagian belakang modem yang menampilkan SN (Serial Number) agar kami sertakan pada laporan.')">Foto SN</button>
+        <button style="height:40px" class="button" onclick="copyText('Mohon dibantu informasikan nomor telepon alternatif selain yang terdaftar agar lebih mudah dihubungi.')">Nomor Alternatif</button>
+      </div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Mohon dibantu untuk restart modem terlebih dahulu. Apabila internet masih tidak bisa digunakan, mohon konfirmasinya agar kami buatkan laporan.')">Restart Dulu</button>    
+        <button class="button" onclick="copyText('Sebagai informasi, kami memerlukan foto serial number (SN) modem karena SN adalah identitas unik perangkat. Dengan adanya informasi tersebut, proses pengecekan dan perbaikan dapat lebih maksimal.')">Komplain SN</button>    
+</div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Mohon maaf, foto yang dimaksud adalah bagian belakang modem yang terdapat informasi SN (Serial Number), sedangkan yang terlampir adalah bagian depan modemnya.')">Bukan Foto Bagian Depan</button>     
+        <button class="button" onclick="copyText('Mohon dibantu untuk melampirkan foto berikut agar kami sertakan pada laporan:\n- Bagian depan tampak indikator merah\n- Bagian belakang tampak informasi serial number')">Foto Depan Belakang</button>       
+</div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Terima kasih atas informasinya.')">TQInfo</button>
+        <button class="button" onclick="copyText('Terima kasih atas lampiran fotonya, Kak XXX.')">TQFoto</button>
+        <button class="button" onclick="copyText('Terima kasih atas informasinya. Kakak akan dihubungi apabila diperlukan konfirmasi atau kunjungan ke lokasi.')">TQNoAlternatif</button>
+      </div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Terima kasih sudah berkenan untuk menunggu prosesnya.')">TQTungguProses</button>
+      </div>
+      <div class="box-label">Tiket Aktif</div>
+<div class="button-row">
+<button class="button" onclick="copyText('Terkait kendala yang dialami, laporan sudah tercatat dengan ID Tiket XXX. Kami telah meminta petugas agar perbaikan dapat secepatnya diselesaikan.\n\nMohon kesediaannya untuk menunggu, serta memastikan modem tetap menyala dan nomor terdaftar aktif agar mudah dihubungi.')">INFO TIKET AKTIF - QUEUEING MODE</button>
+<button class="button" onclick="copyText('Berdasarkan laporan aktif dengan ID Tiket XXX, internet Kakak saat ini terdampak oleh gangguan wilayah di sekitar XXX yang masih dalam proses perbaikan.\n\nKami sudah sampaikan kepada petugas untuk mempercepat prosesnya. Mohon kesediaannya menunggu, serta memastikan modem tetap menyala dan nomor terdaftar aktif agar mudah dihubungi.')">INFO TIKET AKTIF (GAMAS)- QUEUEING MODE</button>
+</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Mohon maaf, kami belum dapat menginformasikan estimasi lamanya perbaikan. Namun, kami sudah sampaikan kepada petugas agar secepatnya diselesaikan. Kami akan terus memantau proses penanganan agar layanan dapat kembali normal.')">Estimasi<br/>TiketAktif Individu</button>
+        <button class="button" onclick="copyText('Mohon maaf, kami belum dapat menginformasikan estimasi lamanya perbaikan. Namun, kami sudah minta petugas agar perbaikan dapat diselesaikan secepatnya.')">Estimasi<br/>TiketAktif Gamas</button>
+</div>
+      <div class="button-row">
+	<button class="button" onclick="copyText('Saat ini kami sudah bantu eskalasikan laporan Kakak agar petugas bisa segera menyelesaikan perbaikannya.')">Eskalasi Laporan</button>
+	<button class="button" onclick="copyText('Laporan yang sudah kami eskalasi akan segera dipantau secara berkelanjutan hingga internet kembali normal.')">Pantau Laporan</button>
+      </div>
+      <div class="button-row">
+	<button class="button" style="height:50px;" onclick="copyText('Saat ini laporan Kakak sedang dalam pantauan berkala oleh kami hingga internet kembali normal. Namun, kami belum dapat menginformasikan untuk estimasi lamanya perbaikan.\n\nYang dapat kami pastikan, kami akan terus sampaikan kepada petugas gangguan untuk mempercepat proses perbaikan.\n\nMohon maaf apabila Kakak masih harus menunggu prosesnya. Selama perbaikan berlangsung, pastikan agar modem dan nomor terdaftar selalu aktif ya Kak.')">Pantau Laporan Berkala (Monitoring BO/AS)</button>
+      </div>
+      <div class="button-row">
+	<button class="button" onclick="copyText('Terima kasih sudah menyampaikan keluhan Kakak atas pengalaman yang terjadi. Hal tersebut akan menjadi bahan evaluasi agar layanan kami dapat lebih baik ke depannya.')">✨ Kami Terima Keluhan yang Disampaikan ✨</button>
+      </div>
+      <div class="box-label"">Tiket Baru</div>
+      <div class="button-row">
+<button class="button" onclick="copyText('Kami sudah bantu pelaporan dengan ID Tiket XXX.\n\nBerdasarkan informasi terkini, sedang terjadi gangguan wilayah di sekitar XXX. \n\nKami sudah minta petugas agar secepatnya diselesaikan. Pastikan modem menyala dan nomor terdaftar selalu aktif selama proses perbaikan.')">Tiket Baru - Gangguan Massal</button>
+	</div>
+      <div class="button-row">
+<button class="button" onclick="copyText('Terkait dengan kendalanya sudah kami buatkan laporan dengan ID Tiket XXX. Proses pengecekan dan perbaikan akan dilakukan melalui sistem. Mohon kesediaannya menunggu, serta pastikan perangkat modem dan nomor terdaftar selalu aktif.')">INFO TIKET BARU<br/>Internet Down/Unknown Indicator</button>
+<button class="button" onclick="copyText('Terkait kendala yang dialami, kami sudah buatkan laporannya dengan ID Tiket XXX. Perbaikan dilakukan bertahap, mulai dari pengecekan sistem hingga kunjungan lokasi jika diperlukan.\n\nMohon kesediaannya untuk menunggu proses perbaikan, serta pastikan modem tetap menyala dan nomor terdaftar aktif agar mudah dihubungi.')">INFO TIKET BARU<br/>Link Loss/ONT Problem</button>
+	</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Terkait dengan kendalanya, saat ini sudah kami buatkan tiket pelaporan dengan ID Tiket XXX.')">Info<br/>Tiket</button>
+        <button class="button" onclick="copyText('Kami informasikan bahwa untuk perbaikan dilakukan dalam beberapa tahap, dimulai dari pengecekan pada sistem hingga kunjungan ke lokasi apabila diperlukan, semisal terkait adanya kabel putus, kerusakan perangkat, atau kendala lainnya.')">Tahapan<br/>Perbaikan</button>
+        <button class="button" onclick="copyText('Selama proses pengecekan dan perbaikan berlangsung, pastikan perangkat modem tetap menyala dan nomor telepon terdaftarnya dalam keadaan aktif agar mudah dihubungi. Saat ini, mohon kesediaannya menunggu ya Kak.')">ModemNyala<br/>TelpAktif</button>
+	<button class="button" onclick="copyText('Mohon maaf, perihal berapa lama proses perbaikannya belum dapat kami informasikan ya Kak. Namun, akan disampaikan kepada petugas agar secepatnya diselesaikan.')">Estimasi<br>Tiket Baru</button>
+</div>
+  <div class="button-row">
+        <button class="button" onclick="copyText('Mohon maaf, perihal SLA dan estimasi dari lamanya proses perbaikan belum dapat kami informasikan. Dari sisi kami akan melakukan koordinasi seoptimal mungkin agar perbaikan bisa dilakukan secepatnya. Mohon agar berkenan menunggu prosesnya ya Kak.')">SLA BERAPA LAMA?????</button>
+        <button class="button" onclick="copyText('Mohon maaf, saat ini kami belum bisa memberikan kepastian perihal lamanya proses perbaikan, namun semua proses pendukung akan terus diupayakan agar kendala yang Kakak alami tidak berlangsung terlalu lama.')">SAMPAI KAPAN MENUNGGU??</button>
+        <button class="button" onclick="copyText('Kami informasikan saat terjadi gangguan wilayah, perbaikan dilakukan pada titik pusat jaringan di area tersebut, bukan melalui kunjungan ke rumah pelanggan.\n\nSetelah pusat kendala selesai diperbaiki, layanan pada masing-masing pelanggan terdampak akan kembali normal secara otomatis.')">Gamas, Petugas Datang?</button>
+        <button class="button" onclick="copyText('Kami memohon maaf atas ketidaknyamanan yang Kakak alami.\n\nKetika kami menyampaikan bahwa laporan sedang diproses, artinya laporan memang telah masuk tahap penanganan dan bukan sekadar tercatat di sistem.\n\nSecara umum, setelah laporan diterima akan dilakukan analisis untuk mengidentifikasi sumber kendala, kemudian dilanjutkan dengan tindakan perbaikan yang diperlukan.\n\nDalam prosesnya, tidak menutup kemungkinan ditemukan faktor teknis lain yang perlu ditangani terlebih dahulu agar perbaikan dapat dilakukan secara optimal.\n\nLaporan Kakak saat ini masih ditindaklanjuti dan berada dalam tahapan penanganan teknis hingga dinyatakan selesai. Mohon kesediaannya untuk menunggu proses yang sedang berjalan ya Kak.')">Diperbaiki Gak Sih?</button>
+        <button class="button" onclick="copyText('Mohon maaf jika respons yang kami sampaikan sebelumnya terasa seperti template. Kami memahami kondisi yang Kakak alami tentu membuat tidak nyaman. Dalam penyampaian informasi, kami berupaya menggunakan bahasa yang formal dan terstruktur agar tetap sopan dan jelas.\n\nOleh karena itu, izin kami sampaikan kembali terkait kendala yang terjadi, saat ini masih dalam proses penanganan dan terus diupayakan agar layanan dapat kembali normal. Mohon maaf apabila masih harus menunggu prosesnya ya Kak')">Jgn Jawaban<br/>Template</button>
+</div>
+  <div class="button-row">
+        <button class="button" onclick="copyText('Untuk saat ini, pembaruan pada laporan masih dalam proses sehingga belum terdapat detail tambahan yang dapat kami sampaikan. Kami memahami tentu Kakak mengharapkan informasi terbaru, namun kami hanya dapat menyampaikan yang sudah tercatat secara resmi di sistem agar tidak terjadi kesalahan informasi.')">Minta Info<br/>dari Laporan</button>
+        <button class="button" onclick="copyText('Kami memahami kekhawatiran Kakak, apalagi jika melihat belum ada pembaruan di laporan. Kami informasikan bahwa setiap laporan yang masuk akan diproses. Hanya saja, tidak setiap tahapan teknis langsung tercatat sebagai pembaruan di laporan.\n\nDalam beberapa kondisi, tim perlu melakukan pengecekan dan analisis terlebih dahulu sebelum hasilnya dapat dicatat sebagai pembaruan resmi di sistem. Saat ini laporan masih dalam tahap penanganan sesuai prosedur yang berlaku.')">No Update Laporan<br/>Gak Dikerjain Dong?</button>
+</div>
+
+<div class="button-row">
+        <button class="button" onclick="copyText('Kami menyadari bahwa waktu yang berlalu namun internet masih gangguan tentu menimbulkan rasa kecewa. Karena itu, kami terus mendorong petugas agar perbaikan dapat segera diselesaikan. Mohon untuk berkenan menunggu selagi kami upayakan koordinasi berkelanjutan melalui laporan aktifnya.')">Maaf Kecewa</button>
+        <button class="button" onclick="copyText('Kami memahami harapan Kakak agar layanan bisa langsung normal setelah laporan dibuat. Namun, setiap gangguan perlu dianalisis terlebih dahulu untuk memastikan penanganan yang tepat, sehingga prosesnya tidak bisa dilakukan secara instan. Saat ini laporan sudah kami teruskan ke petugas. Mohon kesediaannya untuk menunggu hingga layanan kembali stabil.')">Baru Lapor<br/>Mau Langsung Bisa</button>
+        <button class="button" onclick="copyText('Kami memahami keinginan Kakak agar layanan dapat segera normal. Dari sisi kami, petugas masih mengupayakan proses perbaikan secara maksimal. Terkait durasi dan progres sangat menyesuaikan hasil penanganan teknis yang sedang berjalan. Mohon kesediaannya untuk menunggu hingga layanan kembali normal.')">Sudah Lapor<br/>Masih Belum Bisa</button>
+</div>
+
+
+      <div class="box-label">Info Gangguan Wilayah</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Kami informasikan bahwa saat ini sedang terjadi gangguan wilayah di sekitar XXX yang menyebabkan sejumlah pengguna pada jalur distribusi yang sama ikut terdampak, salah satunya internet milik Kakak.')">Info<br/>G. Wilayah</button>
+        <button class="button" onclick="copyText('Dari pengecekan laporan, hingga saat ini petugas masih melakukan perbaikan di lokasi/pusat kendala. Baru saja kami sampaikan juga kepada petugas agar secepat mungkin diselesaikan perbaikannya.')">Pengecekan<br/>Terkini</button>
+        <button class="button" onclick="copyText('Mohon maaf apabila proses yang diperlukan untuk menindaklanjuti kendalanya memerlukan waktu yang cukup lama ya Kak.')">Minta Maaf</button>
+        <button class="button" onclick="copyText('Untuk saat ini, mohon kesediaannya menunggu proses tindak lanjut perbaikannya.')">Mohon Tunggu</button>
+      </div>
+ <div class="button-row">
+        <button class="button" onclick="copyText('Saat ini sedang terjadi gangguan wilayah. Setelah perbaikan selesai, layanan internet akan kembali normal secara otomatis. Jika diperlukan konfirmasi, Kakak akan dihubungi melalui nomor terdaftar atau nomor alternatif.')">Saya Tunggu Infonya - Gamas</button>
+      </div>
+      <div class="box-label"">Lain-lain</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik, kami akan lakukan perbaikan secepat mungkin agar layanan internet kembali normal.')">Upaya<br/>Percepatan</button>
+        <button class="button" onclick="copyText('Kami memahami harapan Kakak terkait kompensasi, terlebih layanan internet saat ini sangat dibutuhkan untuk aktivitas sehari-hari.\n\nTerkait hal tersebut, dapat kami informasikan bahwa saat ini belum terdapat kompensasi untuk gangguan layanan.\n\nKami memahami kondisi ini dapat menimbulkan ketidaknyamanan, sehingga fokus kami adalah memastikan proses penanganan berjalan hingga layanan kembali normal dan dapat digunakan.\n\nNamun, keluhan ataupun masukan dari Kakak tetap kami catat sebagai bahan evaluasi agar kualitas layanan dapat terus ditingkatkan ke depannya.')">Kompensasi</button>
+	<button class="button" onclick="copyText('Kami akan upayakan perbaikannya semaksimal mungkin agar internet normal kembali.')">Upaya<br/>Agar Normal Kembali</button>            
+</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Indikator lampu merah pada modem dapat terjadi akibat gangguan jaringan, seperti kabel terputus di area rumah Kakak atau pada jalur distribusi jaringan.')">Kenapa<br/>LinkLoss?</button>
+        <button class="button" onclick="copyText('Mohon dibantu informasinya, apakah pada kabel jaringan yang terhubung ke modem terdapat indikasi terputus atau tertekuk?')">Ada<br/>Kabel Putus?</button>
+<button class="button" onclick="copyText('Perihal adanya gangguan wilayah bukan berarti dialami juga oleh pengguna ICONNET yang lokasinya berdekatan dengan rumah Kakak, karena dapat terjadi perbedaan jalur distribusi menuju perangkat utama.')">Gamas<br/>Tetangga Bisa?</button>
+<button class="button" onclick="copyText('Kami informasikan bahwa perbaikan tidak selalu memerlukan kunjungan ke rumah karena gangguan bisa terjadi di tingkat wilayah dan ditangani di pusat kendala. \n\nJika gangguan bersifat individu, petugas akan menghubungi Kakak untuk kunjungan. \n\nEstimasi kedatangan belum dapat dipastikan, mohon kesediaannya menunggu dan memastikan nomor terdaftar tetap aktif agar mudah dihubungi.')">Kapan<br/>Petugas Dateng?</button>
+      </div>
+  <div class="button-row">
+        <button class="button" onclick="copyText('Mohon maaf atas ketidaknyamanan yang Kakak rasakan.\n\nGangguan internet dapat terjadi kapan saja karena berbagai faktor yang menimbulkan kendala pada sistem atau infrastruktur jaringan yang saling terhubung, sehingga ketika ada satu titik yang bermasalah, koneksi dapat ikut terdampak.\n\nHal tersebut menjadi tanggung jawab kami untuk terus melakukan perbaikan dan pembenahan agar pengalaman yang Kakak rasakan dapat lebih baik ke depannya.')">Kenapa<br/>Gangguan</button>
+<button class="button" onclick="copyText('Mohon maaf, terkait proses penjadwalan dan pelaksanaan kunjungan dikoordinasikan langsung oleh petugas wilayah sesuai prosedur yang berlaku, sehingga waktu kedatangannya belum dapat kami informasikan.\n\nNamun laporan Kakak sudah tercatat dalam sistem untuk segera dilakukan perbaikan. Mohon kesediaannya untuk menunggu.')">Tidak Bisa<br/>Atur Kunjungan Petugas</button>
+<button class="button" onclick="copyText('Terkait pelaporan, seluruh informasi terintegrasi antara layanan pengaduan dan petugas lapangan yang memberikan pembaruan progres perbaikan.\n\nOleh karena itu, kami tidak dapat membagikan nomor petugas, karena seluruh koordinasi dilakukan melalui kanal resmi, termasuk layanan pesan Instagram ini.\n\nApabila petugas memerlukan konfirmasi atau akan melakukan kunjungan, Kakak akan dihubungi terlebih dahulu untuk memastikan kedatangan.')">Minta<br>Nomor Teknisi</button>
+    </div>    
+<div class="button-row">
+        <button class="button" onclick="copyText('Berdasarkan pengecekan, saat ini kami belum memiliki informasi lebih lanjut perihal adanya gangguan pada internet Kakak.')">Ada Gangguan?</button>
+	<button class="button" onclick="copyText('Baik Kak, setelah laporan dibuat, perbaikan dilakukan melalui sistem terlebih dahulu. Jika dapat diperbaiki dari sistem, internet Kakak akan kembali normal tanpa kunjungan teknisi. Jika diperlukan kunjungan, petugas akan menghubungi Kakak untuk konfirmasi. Mohon untuk menunggu prosesnya ya Kak.')">Kapan Diperbaiki?</button>
+    </div>    
+<div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, kami informasikan bahwa perbaikan dilakukan setiap waktu untuk memastikan layanan internet dapat kembali dinikmati oleh pelanggan. Namun, pada beberapa kondisi, seperti cuaca buruk, keterbatasan akses lokasi, kebutuhan alat khusus, atau faktor keamanan dan keselamatan kerja yang menyebabkan perbaikan ditunda hingga kondisinya memungkinkan untuk dilanjutkan kembali, baik pada hari yang sama ataupun esok harinya.')">Apakah Perbaikan 24 Jam?</button>
+	        <button class="button" onclick="copyText('Baik Kak, apabila akan dilakukan kunjungan petugas, sebelumnya akan dihubungi melalui nomor telepon terdaftarnya. Namun, perihal waktu kedatangan tidak dapat kami tentukan. Dari sisi kami dapat bantu sampaikan kepada petugas untuk secepatnya melakukan perbaikan.')">Saya Tunggu Petugas<br/>Nanti malam</button>
+	        <button class="button" onclick="copyText('Sebagai solusi atas kendala internet yang dialami, dari sisi akan sampaikan kepada petugas untuk melakukan perbaikan. Oleh karena itu, tidak ada instruksi khusus yang diberikan kepada pengguna untuk mengatasi gangguan internet secara mandiri. Saat ini, mohon kesediaannya kembali untuk menunggu proses perbaikannya ya Kak.')">Solusinya Cuma<br/>Tunggu</button>
+    </div>    
+<div class="button-row">
+	        <button class="button" onclick="copyText('Mohon maaf, terkait posisi petugas di lapangan, kami belum dapat menginformasikan secara detail, karena penanganan dilakukan secara bertahap dan menyesuaikan kondisi teknis di lapangan.\n\nYang dapat kami pastikan, laporan Kakak masih aktif dan tetap dalam proses penanganan. Mohon kesediaannya kembali untuk menunggu ya Kak.')">Dimana<br/>Petugasnya?</button>
+	        <button class="button" onclick="copyText('Mohon maaf, terkait proses perbaikan dilakukan melalui beberapa tahapan teknis yang saling berkaitan dan menyesuaikan kondisi di lapangan, sehingga kami tidak dapat menyampaikan perihal tersebut untuk menghindari adanya kesalahan informasi. Untuk saat ini, laporan Kakak masih aktif dan tetap dalam proses penanganan.')">Detail<br/>Progres Perbaikan</button>
+	        <button class="button" onclick="copyText('Mohon maaf, untuk lokasi gangguan secara spesifik belum dapat kami sampaikan. Hal ini karena penanganan bersifat dinamis dan dapat mencakup beberapa titik jaringan dalam satu wilayah. Yang dapat kami pastikan, gangguan saat ini berskala wilayah dan sedang dalam proses penanganan.\n\nMohon kesediaannya untuk menunggu selagi petugas mengupayakan seoptimal mungkin agar layanan kembali normal.')">Detail<br/>Lokasi Perbaikan</button>
+	        <button class="button" onclick="copyText('Mohon maaf, terkait penyebab kendala belum dapat kami sampaikan karena proses penanganan masih berjalan dan informasi dapat berubah. Kami akan terus memantau perbaikan hingga layanan kembali normal. Mohon kesediaan Kakak untuk menunggu.')">Ada<br/>Gangguan Apa?</button>
+</div>
+<div class="button-row">
+	<button class="button" onclick="copyText('Kami tentu sangat menyayangkan apabila harus kehilangan kepercayaan dari pelanggan setia seperti Kakak.\n\nNamun, selama laporan gangguan masih tercatat aktif, kami akan terus mengupayakan penanganan seoptimal mungkin agar layanan internet Kakak dapat kembali normal.')">Mengancam<br/>Berhenti Langganan</button>
+	<button class="button" onclick="copyText('Kami memahami kekecewaan yang Kakak rasakan hingga muncul keinginan untuk menyampaikan keluhan dengan lebih luas. Tentu kami menyayangkan apabila pengalaman yang diterima belum sesuai harapan.\n\nKami tetap terbuka menerima kritik dan masukan sebagai bahan evaluasi. Saat ini laporan Kakak masih dalam proses penanganan, dan kami berkomitmen menyelesaikannya sesuai prosedur yang berlaku.')">Viralkan</button>
+	        <button class="button" onclick="copyText('Kami memahami kekecewaan yang Kakak rasakan hingga muncul keinginan untuk menyampaikan keluhan dengan lebih luas. Tentu kami menyayangkan apabila pengalaman yang diterima belum sesuai harapan.\n\nKami tetap terbuka menerima kritik dan masukan sebagai bahan evaluasi. Saat ini laporan Kakak masih dalam proses penanganan, dan kami berkomitmen menyelesaikannya sesuai prosedur yang berlaku.')">Bukti Foto<br/>Perbaikan</button>
+</div>
+<div class="button-row">
+	        <button class="button" onclick="copyText('Mohon maaf atas ketidaknyamanan yang dirasakan. Kami memahami bahwa kondisi ini tentu menimbulkan kekecewaan dan mengganggu aktivitas Kakak.\n\nSaat ini, laporan gangguan masih tercatat aktif dan sedang dalam penanganan petugas. Proses perbaikan dapat membutuhkan waktu yang berbeda-beda, tergantung pada kondisi jaringan dan faktor teknis di lapangan, termasuk dampak situasi tertentu yang memengaruhi proses pemulihan layanan.\n\nKami terus berupaya mengoptimalkan proses penanganan agar layanan dapat kembali berfungsi dengan baik. Kendala yang dialami Kakak menjadi perhatian bersama, dan kami sangat menghargai kesabaran serta pengertiannya selama proses perbaikan berlangsung.')">Magic Word<br/>Gamas - Perbaikan Lama</button>
+	        <button class="button" onclick="copyText('Kami memahami kekecewaan Kakak apabila proses penanganan terasa lama dan tentu hal tersebut dapat mengganggu aktivitas.\n\nUntuk beberapa kendala jaringan, petugas memerlukan pengecekan lebih lanjut pada titik jaringan atau perangkat di lapangan, sehingga proses penanganannya bisa memerlukan waktu sebelum layanan kembali normal.\n\nNamun, keluhan yang Kakak sampaikan menjadi perhatian kami agar kualitas layanan dapat terus diperbaiki.')">Perbaikannya Lama</button>
+</div>
+ <div class="box-label"">Magic Template Gangguan Massal</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Mohon maaf atas ketidaknyamanan yang Kakak alami. Proses perbaikan gangguan internet memerlukan waktu lebih lama karena petugas perlu memastikan semua masalah teratasi dengan baik, mulai dari mencari sumber gangguan hingga melakukan perbaikan yang aman dan sesuai prosedur.')">Maaf Kalau Lama</button>
+        <button class="button" onclick="copyText('Faktor seperti lokasi kerusakan, kondisi lapangan, atau cuaca juga bisa memengaruhi durasi perbaikan. Namun, kami terus berupaya mempercepat prosesnya agar layanan Kakak segera kembali normal.')">Faktor Lamanya Perbaikan</button>
+	<button class="button" onclick="copyText('Dari sisi kami sudah sampaikan pada laporan agar secepatnya petugas menyelesaikan perbaikan di lokasi. Mohon kesediaannya menunggu ya Kak.')">Mohon Tunggu</button>            
+</div>
+<div class="box-label"">Magic Template Masih Nunggu Perbaikan</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Kami memahami kondisi ini tentu membuat tidak nyaman, apalagi jika internet sedang dibutuhkan dan masih harus menunggu proses perbaikannya.\n\nKami akan terus memaksimalkan penanganannya agar layanan dapat kembali normal.')">Maaf Masih Nunggu</button>        
+	<button class="button" onclick="copyText('Perihal perbaikannya akan kami terus koordinasikan dengan petugas melalui laporan agar secepatnya diselesaikan. Mohon untuk berkenan kembali menunggu prosesnya.')">Koordinasikan dengan Petugas</button>
+</div>
+
+
+  <div class="box">
+      <div class="box-label" style="text-align: center;">Internet Slow</div>	
+ <div class="button-row">
+	<button class="button" onclick="copyText('Berikut beberapa penyebab umum kendala internet lambat: \n\n• Sinyal Wi-Fi lemah karena jarak jauh dari router atau banyak penghalang seperti dinding\n• Terlalu banyak pengguna yang terhubung ke Wi-Fi secara bersamaan\n• Kepadatan jaringan, terutama jika banyak orang menggunakan Wi-Fi di area sekitar\n• Penyebab teknis lainnya yang memerlukan penanganan lebih lanjut dari sisi kami')">Kenapa Lambat?</button>
+</div>
+      <div class="button-row">
+	<button class="button" onclick="copyText('Mohon informasinya, apakah kendala internet lambat terjadi pada jam-jam tertentu atau sepanjang hari?')">Waktu Slow</button>        
+	<button class="button" onclick="copyText('Baik Kak, apakah kendala internet lambat terjadi saat mengakses berbagai situs web\/aplikasi atau hanya beberapa saja?')">Semua/Beberapa<br/>Saja?</button>        
+	<button class="button" onclick="copyText('Baik Kak , mohon bantuannya melampirkan tangkapan layar (screenshot) salah satu kendala, misalnya mengalami hambatan memuat foto/video (buffering) saat mengakses Instagram, Facebook, Tiktok, atau YouTube agar memudahkan proses investigasi ya Kak.')">SS Kendala</button>
+	<button class="button" onclick="copyText('Bisa bantu informasikan berapa banyak perangkat yang terhubung ke jaringannya?')">Berapa <br/>Perangkat?</button>        
+</div>
+<div class="button-row">
+        <button class="button" onclick="copyText('Mohon informasinya, apakah Kakak sudah melakukan uji kecepatan internet (speed test)?')">Cek Speed?</button>        
+	<button class="button" onclick="copyText('Baik Kak, mohon dibantu untuk melakukan uji kecepatan internet pada https://www.nperf.com/id/ dan melampirkan hasilnya ke kami agar dapat memaksimalkan proses perbaikan.\n\nSaat melakukan pengujian, mohon pastikan hanya ada satu perangkat yang terhubung ke jaringan internetnya.')">Speedtest Dulu</button> 
+<button class="button" onclick="copyText('Baik Kak, mohon bantuannya melampirkan hasil pengujian kecepatan internetnya terlebih dahulu agar memudahkan kami melakukan investigasi dan penanganan dari kendalanya ya Kak.')">Lampirkan Speedtest</button> 
+      </div>            
+<div class="box-label" style="text-align: center;">Intermitten</div>
+      <div class="button-row">
+	  <button class="button" onclick="copyText('Mohon informasinya, biasanya dalam interval berapa lama koneksi internet terputus (detik atau menit)?')">Rentang<br/>Putus-putus</button>
+<button class="button" onclick="copyText('Apakah sebelumnya sudah pernah melakukan ping test pada jaringannya?')">Sudah<br/>PingTest?</button>        
+        <button class="button" onclick="copyText('Baik Kak, mohon bantuannya melakukan ping test terlebih dahulu agar memudahkan kami melakukan tindak lanjut.\n\nBerikut panduannya: \n1. Buka https://ping.eu/ping/\n2. Pada kotak IP address or host name, masukkan salah satu alamat situs yang biasa dikunjungi (contoh: Google.com, YouTube.com, dan sebagainya)\n3. Pada kotak Enter code, masukkan sesuai gambar\n4. Ketuk tombol Go\n\nJika sudah, mohon melampirkan hasil pengujiannya ya Kak.')">PingTest<br/>Dulu</button>        
+      </div>            
+    </div>    
+
+<div class="box">
+        <div class="box-label" style="text-align: center;">Pendaftaran ICONNET</div>
+<div class="button-row">
+ <button class="button" onclick="copyText('Kami ucapkan terima kasih atas ketertarikannya terhadap layanan ICONNET, Kak XXX.')">Terima<br/>Kasih</button>
+<button class="button" onclick="copyText('Saat ini, bisa bantu informasikan dengan siapa kami terhubung?')">Dengan Siapa, ya?</button>
+          <button class="button" onclick="copyText('Berikut kami informasikan prosedur pendaftaran layanan ICONNET:\n\n1. Pastikan area sudah tercakup oleh jaringan ICONNET.\n2. Lakukan pendaftaran dan akan dilakukan peninjauan lebih lanjut (verifikasi dan validasi).\n3. Apabila dapat dilakukan pemasangan akan dikirimkan tagihan pada email terdaftar.\n4. Pembayaran dilakukan diawal sekali bayar sebelum pemasangan (prabayar).\n5. Saat ini kami memiliki promo paket bundling ICONNET HEBAT.')">Syarat dan Ketentuan</button>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Perihal biaya layanan dan pemasangan akan kami informasikan setelah melakukan pengecekan cakupan area.')">Berapa Harganya?</button>
+	          <button class="button" onclick="copyText('Perihal pendaftaran dapat dilakukan apabila lokasinya sudah tercakup jaringan ICONNET.')">Bisa Pasang<br>Kalau Tercakup</button>
+	          <button class="button" onclick="copyText('Mohon dibantu untuk informasikan alamat lengkap atau berbagi lokasi (share location) dari Google Maps agar kami dapat mengecek cakupan area dan ketersediaan pendaftaran baru layanan ICONNET di lokasi Kakak.')">Bantu<br/>Cek Area</button>
+          <button class="button" onclick="copyText('Mohon dibantu untuk menggunakan fitur "Berbagi Lokasi" atau "Share Location" pada aplikasi WhatsApp agar kami mengetahui titik koordinatnya ya Kak.')">Fitur<br/>Share Location</button>
+        </div>
+<div class="button-row">
+          <button class="button" onclick="copyText('Terima kasih atas lampiran lokasinya.')">TQ Lokasinya</button>
+</div>
+<div class="button-row">
+          <button class="button" onclick="copyText('Baik Kak, kami informasikan untuk estimasi pemasangan adalah 2 hari kalender setelah pembayaran diterima.')">Estimasi Pemasangan</button>
+          <button class="button" onclick="copyText('Baik Kak, apabila sudah mengajukan pendaftaran, maka selanjutnya akan ada tim penjualan kami yang menghubungi untuk melakukan konfirmasi, baik melalui email ataupun pesan WhatsApp. Apabila dihubungi melalui WhatsApp, ada beragam nomor yang digunakan oleh tim penjualan kami, baik nomor pribadi ataupun nomor yang digunakan khusus untuk kebutuhan bisnis (penjualan). Kami informasikan apabila pendaftarannya disetujui, maka akan terbit tagihan yang hanya dikirimkan ke email terdaftar. Perihal metode pembayaran yang tersedia sesuai pada tagihan yang dikirimkan ke email, yaitu Mandiri Virtual Account, BRI Virtual Account (BRIVA), Alfamart, dan Indomaret.')">Ini Nomor Sales?</button>
+        </div>
+<div class="button-row">
+	          <button class="button" onclick="copyText('Mohon maaf, saat ini kami belum memiliki informasi lebih lanjut perihal tersebut, karena setiap petugas di berbagai lokasi dapat menggunakan nomor pribadi ataupun bisnis untuk menghubungi pelanggan terkait pemasangan. Namun, apabila Kakak dihubungi oleh nomor tersebut dan menginformasikan perihal pemasangan, maka silakan melakukan koordinasi lebih lanjut.')">Ini Nomor Petugas Pemasangan?</button>
+</div>
+        <div class="box-label">Tawaran Bantuan</div>
+        <div class="button-row">      
+          <button class="button" onclick="copyText('Berdasarkan pengecekan, area tersebut sudah tercakup layanan ICONNET.')">Tercover</button>
+          <button class="button" onclick="copyText('Berdasarkan pengecekan, lokasi Kakak saat ini belum terjangkau layanan ICONNET sehingga pendaftaran belum dapat dilakukan.\n\nKakak dapat melakukan pengecekan mandiri melalui aplikasi PLN Mobile menggunakan ID Pelanggan PLN. Jika layanan masih belum tersedia, silakan ajukan permohonan perluasan cakupan melalui menu Beri Tahu Kami pada aplikasi tersebut.\n\nPengajuan tersebut akan menjadi bahan pertimbangan untuk perluasan jaringan. Estimasi waktu perluasan belum dapat dipastikan, sehingga mohon melakukan pengecekan cakupan area secara berkala.')">Belum<br/>Tercover</button>
+	<button class="button" onclick="copyText('Baik, kami informasikan meskipun ada tetangga atau kerabat yang sudah memasang ICONNET, namun terdapat indikasi bahwa kotak instalasi terdekat sudah penuh yang menyebabkan pemasangan baru saat ini belum dapat dilakukan.')">Jalur<br/>Penuh</button>
+	<button class="button" onclick="copyText('Kami sangat menyayangkan perihal ini. Mohon untuk menghubungi kami secara berkala agar dapat dilakukan pengecekan lebih lanjut terkait cakupan area di lokasi Kakak ke depannya.')">Hubungi<br/>Berkala</button>
+        </div>
+ <div class="button-row">      
+	<button class="button" onclick="copyText('Namun Kakak tidak perlu khawatir, kami akan buatkan laporannya agar dilakukan tindak lanjut terkait perbedaan hasil pengecekan. Mohon dibantu untuk melampirkan tangkapan layar (screenshot) dari aplikasi PLN Mobile yang menunjukkan area Tercover ya Kak.">Lampirkan <br/>PLN Mobile Tercover</button>
+	<button class="button" onclick="copyText('Terkait perbedaan hasil pengecekan pada PLN Mobile, kami sudah buatkan laporan dengan ID Tiket XXX agar dilakukan tindak lanjut. Jika ingin mengajukan pendaftaran, silakan melalui aplikasi PLN Mobile ya Kak. Secara bersamaan, mohon untuk menunggu tindak lanjut laporan yang kami buat sebelumnya.')">Tidak Tercakup - Buat Keluhan Coverage</button>
+        </div>
+ <div class="button-row">      
+	<button class="button" onclick="copyText('Perihal keterangan Tercover pada aplikasi PLN Mobile menandakan bahwa pada lokasi tersebut sudah terdapat jaringan ICONNET. Namun, hal ini tidak menjamin bisa dilakukan pemasangan baru karena sejumlah alasan, seperti kotak instalasi penuh, jarak instalasi dari rumah pengguna ke kotak instalasi yang jauh, dan sebagainya.')">SYSCCA Tidak Tercakup, <br/>PLN Mobile Tercakup?</button>
+	<button class="button" onclick="copyText('Baik Kak, meskipun pada aplikasi PLN Mobile tercakup, namun saat pengajuan pendaftaran akan dilakukan pengecekan lebih lanjut apakah pemasangan baru dapat dilakukan. Berdasarkan pengecekan lebih lanjut, di lokasi Kakak belum dapat diajukan pemasangan baru karena XXX.')">PLN Mobile Tercakup, <br/>Kenapa Pemasangan Dibatalkan?</button>
+        </div>
+ <div class="button-row">      
+<button class="button" onclick="copyText('Baik, mohon dibantu untuk mengetuk tombol `Pasang Sekarang`. Apabila pendaftaran dapat dilanjutkan, mohon untuk mengikuti instruksi yang disampaikan pada aplikasi.')">Ketuk Pasang Sekarang</button>
+<button class="button" onclick="copyText('Namun, apabila setelahnya terdapat keterangan ICONNET Tidak Tersedia, mohon untuk mengetuk tombol Beri Tahu Kami sebagai bentuk permintaan agar dilakukan perluasan wilayah.')">Ketuk Beri Tahu Kami</button>
+
+        </div>
+<div class="button-row">
+<button class="button" onclick="copyText('Untuk mengajukan pendaftaran, mohon mengisi data berikut terlebih dahulu.\n\nNama lengkap:\nID PLN (Nomor Meteran Listrik):\nNomor handphone:\nNIK:\nEmail (GMail):\nPekerjaan:\nAlamat lengkap:\nProvinsi:\nKota:\nKecamatan:\nKelurahan:\nKode pos:\nPatokan lokasi:\nNomor handphone kerabat:\nHubungan kerabat:')">Isi<br/>Form</button>
+<button class="button" onclick="copyText('Baik, kami akan ajukan terlebih dahulu pendaftarannya. Mohon kesediaannya menunggu ya Kak.')">Hold Ajukan Pendaftaran</button>
+<button class="button" onclick="copyText('Baik Kak XXX, pendaftarannya sudah kami ajukan dengan ID Tiket XXX. Saat ini akan dilakukan pengecekan data pendaftaran terlebih dahulu.')">Sudah Diajukan</button>
+<button class="button" onclick="copyText('Berikut kami informasikan beberapa ketentuan setelah pengajuan pendaftaran, yaitu:\n\n1. Mohon selalu mengaktifkan nomor handphone yang didaftarkan, karena Tim Kami akan menghubungi untuk konfirmasi permohonan berlangganan ICONNET dan merekomendasikan paket layanan yang tersedia.\n2. Setelah memilih paket layanan, Kakak akan menerima link konfirmasi Syarat dan Ketentuan Berlangganan ICONNET, Persetujuan Penggunaan Data Pribadi dan akan diminta untuk mengunggah:\n• Foto KTP\n• Swafoto KTP\n• Foto Rumah Tampak Depan\n• Foto kWh Meter Listrik\n3. Link konfirmasi berlaku 7 (tujuh) hari kalender. Apabila Kakak melakukan konfirmasi melewati batas waktu tersebut, maka status permohonan otomatis dibatalkan dan wajib mengajukan permohonan berlangganan kembali.\n4. Selanjutnya, Tim Kami akan melakukan validasi dokumen dan data pendaftaran pada hari Senin - Minggu pukul 08:00 s.d. 18:00 WIB melalui nomor telepon 150678.\n5. Pembayaran permohonan berlangganan ICONNET dapat dilakukan setelah proses validasi berhasil.\n6. Seluruh progres permohonan berlangganan akan kami sampaikan melalui email, mohon kesediaannya untuk melakukan pengecekan berkala pada email terdaftar.\n7. Apabila pada saat petugas datang ke lokasi terdapat ketidaksesuaian data atau dokumen dengan kondisi sebenarnya, maka instalasi tidak dapat dilakukan.')">Tahapan<br/>Setelah Daftar</button>
+</div>
+<div class="box-label">Lain-lain</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Baik Kak, perihal paket layanan (Mbps) berdasarkan jumlah perangkat terhubung disesuaikan kembali dengan aktivitas mengakses internet pada masing-masing perangkat. Namun, kami berikan gambaran umumnya sebagai berikut:\n\nSocial Media:\n- 20 Mbps: 5 perangkat\n- 35 Mbps: 10 perangkat\n- 50 Mbps: 15 perangkat\n- 100 Mbps: 25 perangkat\n\nStreaming:\n- 20 Mbps: 2 perangkat\n- 35 Mbps: 4 perangkat\n- 50 Mbps: 10 perangkat\n- 100 Mbps: 20 perangkat\n\nMain Game Mobile:\n- 20 Mbps: 3 perangkat\n- 35 Mbps: 5 perangkat\n- 50 Mbps: 8 perangkat\n- 100 Mbps: 15 perangkat\n\nMain Game PC/Laptop:\n- 20 Mbps: 2 PC/Laptop\n- 35 Mbps: 3 PC/Laptop\n- 50 Mbps: 5 PC/Laptop\n- 100 Mbps: 10 PC/Laptop\n\nVideo Call Mobile:\n- 20 Mbps: 3 perangkat\n- 35 Mbps: 5 perangkat\n- 50 Mbps: 8 perangkat\n- 100 Mbps: 15 perangkat\n\nOnline Meeting PC/Laptop:\n- 20 Mbps: 1 PC/Laptop\n- 35 Mbps: 2 PC/Laptop\n- 50 Mbps: 3 PC/Laptop\n- 100 Mbps: 6 PC/Laptop')">Rekomendasi Jumlah Perangkat</button>
+          <button class="button" onclick="copyText('Baik Kak, kami informasikan untuk paket layanan sifatnya direkomendasikan oleh Tim Kami. Namun, kami dapat sampaikan bahwa Kakak ingin berlangganan paket XXX.')">Berminat Paket Tertentu</button>
+          <button class="button" onclick="copyText('Mohon maaf, perihal lamanya proses pendaftaran setelah diajukan belum dapat kami informasikan. Namun, akan kami upayakan secepatnya sehingga kakak bisa segera menikmati layanan ICONNET.')">Berapa Lama Proses<br/>Pengajuan Daftar?</button>
+          <button class="button" onclick="copyText('Kami memahami keinginan Kakak untuk memindahkan modem agar lebih sesuai dengan kebutuhan di rumah.\n\nNamun mohon maaf, untuk saat ini pemindahan titik modem dalam lokasi yang sama belum dapat kami proses karena pemasangan awal sudah mengikuti ketentuan dan standar instalasi yang berlaku.')">Pindahin Modem</button>
+	        </div>
+  <div class="button-row">
+          <button class="button" onclick="copyText('Baik, apabila ingin berlangganan ICONNET Seru, mohon untuk melakukan pendaftaran melalui pihak yang menginformasikan promo tersebut. Saat ini pendaftaran ICONNET Seru melalui kami belum dapat dilakukan ya Kak.')">Daftar ICONNET Seru</button>
+</div>
+  <div class="button-row">
+          <button class="button" onclick="copyText('Untuk mengajukan permintaan perluasan cakupan ICONNET, silakan mengikuti langkah-langkah berikut:\n\n1. Unduh dan buka aplikasi PLN Mobile.\n2. Pada menu utama, pilih Internet.\n3. Gulir ke bawah hingga menemukan menu Cek Jangkauan ICONNET, lalu pilih Cek Coverage.\n4. Masukkan alamat lengkap pada kolom pencarian Cari Lokasi Anda.\n5. Pilih menu Beri Tahu Kami, kemudian isi data diri yang diperlukan.\n6. Terakhir, pilih Kirim Feedback.')">Panduan Perluasan Wilayah</button>
+          <button class="button" onclick="copyText('Data pengajuan yang masuk akan menjadi pertimbangan bagi tim kami dalam melakukan perluasan wilayah. Namun, untuk lamanya proses perluasan wilayah belum dapat kami pastikan.')">Pertimbangan Coverage</button>
+	        </div>
+      </div>
+
+
+    <div class="box">
+        <div class="box-label" style="text-align: center;">Pendaftaran ICONPLAY</div>
+<div class="button-row">
+ <button class="button" onclick="copyText('Berikut kami informasikan prosedur pendaftaran layanan ICONPLAY:\n\n1. Minimal berlangganan layanan ICONPLAY selama 12 bulan, apabila pada periode tersebut pelanggan mengajukan berhenti berlangganan perangkat Set Top Box (STB) ICONPLAY akan diambil oleh petugas karena milik PLN ICON Plus yang disewakan kepada pelanggan dan pelanggan dikenakan denda Rp400.000\n2. Batas maksimal jarak pemasangan perangkat STB add on ICONPLAY adalah 3 meter dari perangkat ONT ICONNET dan batas maksimal kabel yang terpasang adalah 1,5 meter\n3. Komponen total biaya paket bundling yang harus dibayarkan yaitu (biaya layanan ICONNET + biaya instalasi) + (biaya layanan ICONPLAY + biaya instalasi) + PPN 11% + admin kanal pembayaran')">Syarat & Ketentuan ICONPLAY</button>
+                  </div> 
+            </div>
+
+
+      <div class="box">
+        <div class="box-label" style="text-align: center;">Upgrade</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Sebelumnya, kami ucapkan terima kasih atas kesetiaan Kakak terhadap layanan dan produk ICONNET.')">TQ</button>
+          <button class="button" onclick="copyText('Berikut adalah syarat dan ketentuan untuk upgrade layanan:\n\n- Pelanggan perlu berlangganan minimal 1 bulan sebelum mengajukan upgrade.\n- Bagi pelanggan pascabayar, pastikan tidak ada tunggakan tagihan. Jika ada, mohon untuk melunasinya terlebih dahulu.\n- Setelah mengajukan permohonan upgrade, pelanggan akan menerima tagihan yang dikirimkan ke email terdaftar yang berlaku 1 hari kalender (hingga pukul 23:59 WIB di hari yang sama). Jika pembayaran tidak dilakukan dalam batas waktu tersebut, maka pengajuan akan dibatalkan secara otomatis.\n- Proses konfigurasi layanan upgrade memiliki estimasi 7x24 jam setelah pembayaran terkonfirmasi lunas pada sistem.')">Syarat<br/>Ketentuan</button>
+<button class="button" onclick="copyText('Apakah Kakak ingin dibantu untuk pengajuan upgrade-nya?')">Mau<br/>Upgrade?</button>
+          <button class="button" onclick="copyText('Mohon isi data berikut terlebih dahulu untuk melakukan pengajuan upgrade ya Kak.\n\nID Pelanggan:\nNama:\nAlamat:\nKecepatan Layanan Baru:')">Isi<br/>Data</button>          
+          <button class="button" onclick="copyText('Terkait pertanyaannya, kami informasikan bahwa terdapat syarat minimal berlangganan satu bulan untuk bisa melakukan pengajuan upgrade. Berdasarkan pengecekan, Kakak belum memenuhi persyaratan tersebut sehingga pengajuan upgrade belum dapat dilakukan.')">Tidak<br/>PenuhiSyarat</button>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Terima kasih atas datanya. Kami akan bantu ajukan terlebih dahulu. Mohon kesediaannya menunggu ya Kak.')">TQ Data<br/>Pengajuan</button>
+          <button class="button" onclick="copyText('Baik, saat ini kami sudah bantu ajukan permohonan upgrade layanannya dengan ID Tiket XXX. ')">Sudah<br/>Pengajuan</button>
+<button class="button" onclick="copyText('Mohon lakukan pengecekan secara berkala pada kotak masuk atau spam email terdaftarnya untuk mengetahui status pengajuannya.')">Cek<br/>Berkala</button>
+<button class="button" onclick="copyText('Kami informasikan saat kode pembayaran upgrade terbit, masa berlakunya hanya 1 hari kalender atau maksimal pukul 23:59 di hari yang sama. Apabila melewati waktu tersebut tidak ada pembayaran tagihan, maka pengajuannya dibatalkan dan Kakak harus mengajukan ulang untuk upgrade layanannya.')">Exp<br/>Tagihan</button>
+          <button class="button" onclick="copyText('Terkait estimasi kapan status pengajuannyanya diterima melalui email belum dapat kami informasikan, karena data permohonannya baru diterima dan akan dilakukan tindak lanjut terlebih dahulu. Mohon kesediaannya menunggu prosesnya ya Kak.')">Estimasi Pengajuan</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-label">Downgrade</div>
+<div class="button-row">
+          <button class="button" onclick="copyText('Sebelumnya kami informasikan ketentuan untuk proses konfigurasi (downgrade) dilakukan pada H-3 sebelum periode penggunaan berakhir. Tagihan berikutnya terbit pada H-10 sebelum periode penggunaan berakhir, namun masih mengikuti paket saat ini. Artinya, Kakak membayar untuk layanan (PAKET LAMA), namun kecepatan yang diterima sudah mengikuti layanan (PAKET BARU). Pada tagihan selanjutnya, Kakak baru akan menerima tagihan dengan nominal sesuai layanan (PAKET BARU). Apakah Kakak tetap ingin mengajukan downgrade layanannya?')">Retensi - Prepaid</button>
+</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Sebelumnya, kami ucapkan terima kasih atas kesetiaan Kakak terhadap layanan dan produk kami.')">TQ</button>
+          <button class="button" onclick="copyText('Terkait pertanyaannya, kami informasikan untuk pengajuan perubahan paket layanan (downgrade) terdapat persyaratan minimal 3 bulan berlangganan ya Kak. ')">Syarat Downgrade</button>
+	<button class="button" onclick="copyText('Bisa dibantu informasikan terlebih dahulu apa alasan Kakak ingin downgrade layanan? ')">Alasan Downgrade?</button>
+</div>
+        <div class="button-row">
+	<button class="button" onclick="copyText('Baik Kak, saat ini mohon dibantu melengkapi data berikut:\n\nID Pelanggan:\nNama:\nPaket kecepatan lama:\nPaket kecepatan baru:\n\nSetelah mengisi data berikut, mohon dibantu juga untuk melampirkan foto KTP ya Kak agar dapat kami ajukan permohonan downgrade layanannya.')">Isi Form</button>
+		<button class="button" onclick="copyText('Baik Kak, mohon dibantu konfirmasi:\n\nXXX\n\nApakah bersedia kami ajukan permohonan downgrade layanannya? ')">Konfirmasi Data</button>
+	<button class="button" onclick="copyText('Mohon kesediaannya menunggu beberapa saat, kami akan ajukan permohonannya.')">Ajukan Dulu</button>
+</div>
+        <div class="button-row">
+	<button class="button" onclick="copyText('Baik Kak XXX, kami sudah ajukan permohonan downgrade layanannya dengan ID Tiket XXX.')">Sudah<br/>Diajukan</button>
+	<button class="button" onclick="copyText('Apabila permohonan downgrade disetujui, maka perubahan layanan akan dilakukan H-3 sebelum masa pemakaian habis.')">Periode Konfigurasi<br>Prepaid</button>
+	<button class="button" onclick="copyText('Apabila permohonan downgrade disetujui, maka perubahan layanan akan dilakukan H-3 sebelum terbit tagihan terbarunya.')">Periode Konfigurasi<br>Postpaid</button>
+	<button class="button" onclick="copyText('Untuk tagihan dengan layanan baru (yang sudah di-downgrade) akan terbit pada periode billing (tagihan) berikutnya.')">Tagihan<br/>Baru</button>
+	<button class="button" onclick="copyText('Untuk mengetahui progres permohonan downgrade layanannya, silakan mengecek secara berkala pada email terdaftarnya.')">Cek<br/>Email Berkala</button>        
+</div>
+      </div>
+
+      <div class="box">
+        <div class="box-label">Ganti Password</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Baik Kak, bisa bantu informasikan terlebih dahulu apa merek modemnya saat ini?')">Merek Modem</button>
+          <button class="button" onclick="copyText('Perihal kendala nama WiFi tidak muncul pada perangkat, kami dapat bantu buatkan laporan agar segera dilakukan perbaikan.')">Nama WiFi Tidak Muncul</button>        
+        </div>
+        <div class="button-row">
+<button class="button" onclick="copyText('Berikut panduan untuk mengubah kata sandi WiFi pada modem Raisecom:\n\n1. Pastikan PC dan modem sudah terkoneksi.\n2. Buka browser Google Chrome.\n3. Ketik di address bar 192.168.1.1.\n4. Masukan username: useradmin dan password: (atau bisa dicek di belakang perangkat).\n5. Pada menu utama klik Basic > Interface > WLan 2.4G > Network Name (SSID) untuk ganti nama WiFi.\n6. Pada menu utama klik Basic > Interface > WLan 2.4G > WPA Pre-Shared Key untuk ganti password WiFi baru minimal 8 huruf.\n7. Klik OK.')">Raisecom</button>
+          <button class="button" onclick="copyText('Berikut adalah panduan mengubah nama atau kata sandi WiFi pada modem Huawei:\n\n1. Pastikan PC dan Modem sudah terkoneksi.\n2. Pertama buka browser Google Chrome.\n3. Ketik di address bar 192.168.18.1 atau 192.168.100.1\n4. Masukan username Epuser dan password userEp (atau bisa cek di belakang perangkat)\n5. Pada menu utama Home page> Wi-fi configuration> Wi-fi Name untuk Ganti Nama WiFi\n6. Pada menu utama Home page> Wi-fi configuration> Password untuk ganti password WiFi baru minimal 8 huruf.\n7. Terakhir klik Save.')">Huawei</button>
+          <button class="button" onclick="copyText('Berikut panduan mengubah kata sandi WiFi pada modem FiberHome:\n\n1. Pastikan PC dan Modem sudah terkoneksi.\n2. Pertama buka browser Google Chrome.\n3. Ketik di address bar 192.168.1.1.\n4. Masukan username user dan password user1234 (atau bisa cek di belakang perangkat).\n5. Pada menu klik Network >WLAN Settings> Advanced> 2.4G Advanced / 5G Advanced > SSID Name untuk ganti nama WiFi.\n6. Pada menu klik Network >WLAN Settings> Advanced> 2.4G Advanced / 5G Advanced > WPA/Wi-Fi Protected Access untuk ganti password WiFi baru minimal 8 huruf.\n7. Klik Apply.')">FiberHome</button>
+          <button class="button" onclick="copyText('Baik, berikut panduan untuk mengubah kata sandi WiFi pada modem ZTE: \n\n1. Pastikan PC dan Modem sudah terkoneksi.\n2. Buka browser Google Chrome.\n3. Ketik di address bar 192.168.1.1.\n4. Masukan username: admin dan password: admin (atau bisa cek di belakang perangkat)\n5. Pada menu utama klik Network> WLAN> SSID Settings untuk ganti nama WiFi.\n6. Pada menu utama klik Network> WLAN> Security> WPA Passphrase untuk ganti password WiFi baru minimal 8 huruf.\n7. Klik Submit.')">ZTE</button>
+          <button class="button" onclick="copyText('Baik, berikut panduan untuk mengganti username dan password pada modem BDCOM ya Kak: \n\n1. Buka web browser, misalnya Chrome, Firefox, Opera atau lainnya \n2. Ketik 10.0.0.10 (IP default untuk mengakses antarmuka admin) di bilah alamat browser untuk mengakses antarmuka pengguna berbasis web router \n3. Anda akan melihat 2 bidang teks tempat untuk memasukkan username/SSID dan password \n4. Username/SSID default untuk BDCOM adalah user dan Password default adalah 123456 \n6. Masukkan username/SSID dan password, lalu tekan Enter atau Masuk \n5. Saat berhasil login, Anda bisa melakukan penggantian SSID (username) dan password sesuai keinginan ')">BDCOM</button>
+        </div>
+
+        <div class="button-row">
+          <button class="button" onclick="copyText('Baik, mohon melengkapi data berikut:\n\nID Pelanggan:\nNama terdaftar:\nKata sandi baru:\nNomor WhatsApp aktif:')">Isi Data</button>        
+	<button class="button" onclick="copyText('Baik, mohon konfirmasinya:\n\nID pelanggan:\nNama terdaftar:\nKata sandi baru: \nNomor WhatsApp aktif: \nNomor telepon alternatif:\n\nApakah bersedia kami ajukan permintaan mengubah kata sandi WiFi-nya?')">Konfirmasi<br>Data</button>
+          <button class="button" onclick="copyText('Baik, kami sudah buatkan laporan permintaan mengubah kata sandi WiFi dengan ID Tiket XXX.\n\nMohon kesediaannya untuk menunggu, serta memastikan modem dan nomor terdaftar selalu aktif.\n\nJika proses selesai, Kakak bisa terhubung kembali dengan kata sandi barunya.')">Sudah Diajukan</button>  
+          <button class="button" onclick="copyText('Mohon maaf, kami belum dapat menginformasikan estimasi proses perubahan kata sandi WIFi-nya. Namun, permintaannya sudah kami ajukan ke petugas/tim agar secepatnya diproses.')">Estimasi</button>              
+	</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Apabila terdapat kendala atau mengalami kesulitan mengubah kata sandi WiFi secara mandiri, kami dapat bantu prosesnya dengan pengajuan ke tim teknis.')">Dibantu Perubahan Password</button>        
+          <button class="button" onclick="copyText('Terkait kata sandi WiFi yang dirasa sering dibobol, umumnya hal tersebut dapat terjadi karena beberapa faktor, seperti penggunaan kata sandi yang mudah ditebak, dibagikan ke banyak perangkat, atau adanya perangkat yang sebelumnya sudah pernah terhubung dan tersimpan otomatis.\n\nUntuk menjaga keamanan jaringan, disarankan menggunakan kombinasi kata sandi yang lebih kuat (minimal 8 karakter dengan campuran huruf besar, huruf kecil, angka, dan simbol), serta menggantinya secara berkala.')">Kenapa Sering Dibobol?</button>        
+	</div>
+ 
+<div class="box-label">Ganti Nama WiFi/SSID</div>
+        <div class="button-row">
+          <button class="button" onclick="copyText('Baik, apakah ingin mengganti nama WiFI secara mandiri atau dibantu dari sisi kami?')">Ingin Dibantu atau Ganti Sendiri?</button>
+</div>
+<div class="button-row">
+          <button class="button" onclick="copyText('Baik, mohon melengkapi data berikut:\n\nNama WiFi baru:\nNomor WhatsApp aktif:')">Isi Data</button>        
+          <button class="button" onclick="copyText('Baik, mohon konfirmasinya:\n\nNama WiFi baru:\nNomor WhatsApp aktif:')">Konfirmasi Data</button>        
+          <button class="button" onclick="copyText('Baik, kami sudah buatkan laporan permintaan mengubah nama WiFi dengan ID Tiket XXX.\n\nMohon kesediaannya untuk menunggu. Jika proses selesai, Kakak bisa terhubung kembali dengan nama WiFi barunya.')">Sudah Diajukan</button>        
+        </div>
+
+        <div class="box-label">Cek Perangkat Terhubung</div>
+        <div class="button-row">
+	<button class="button" onclick="copyText('Mohon maaf, tampilan web console dapat berbeda pada setiap perangkat, sehingga kami tidak dapat memastikan langkah pengecekan secara detail selain dari panduan yang diberikan sebelumnya.')">Beda Tampilan<br/>Web Console</button>
+	<button class="button" onclick="copyText('Izin kami informasikan Kak XXX, proses pemblokiran perangkat harus dilakukan secara akurat. Apabila terjadi kesalahan identifikasi, terdapat risiko perangkat yang masih digunakan, seperti ponsel atau laptop milik Kakak, ikut terblokir.\n\nOleh karena itu, demi keamanan dan kenyamanan penggunaan, kami lebih menyarankan pengamanan dari sisi modem, seperti mengganti kata sandi Wi-Fi secara berkala atau membatasi jumlah perangkat yang dapat terhubung.\n\nKami dapat membantu memandu perubahan kata sandi WiFi secara mandiri. Selain itu, pembatasan perangkat juga dapat kami bantu jika diperlukan.')">Blokir Perangkat</button>
+</div>
+	       
+        <div class="button-row">
+  	<button class="button" onclick="copyText('Kami informasikan juga bahwa terdapat perbedaan pada beberapa tipe modem. Apabila terkendala mengikuti panduan perubahan nama WiFi atau kata sandi tersebut, maka perubahannya dapat dibantu dari sisi kami dengan pengajuan ke tim teknis ya Kak.')">Beda Tipe Modem</button>
+        </div>
+        <div class="button-row">
+  	<button class="button" onclick="copyText('Baik Kak, berikut panduan mengecek kata sandi WiFi pada HP Android:\n\n1. Buka Pengaturan (Settings) di HP Kakak.\n2. Pilih Jaringan & Internet (Network & Internet) atau Koneksi (Connections), tergantung tipe HP Kakak.\n3. Pilih Wi-Fi dan pastikan Kakak terhubung ke jaringan Wi-Fi yang ingin dicek kata sandinya.\n4. Ketuk Nama jaringan Wi-Fi yang sedang terhubung.\n5. Di sana akan muncul beberapa informasi tentang jaringan Wi-Fi. Cari opsi QR Code atau Bagikan (Share).\n6. Pilih Bagikan atau ikon berbagi (biasanya berupa ikon QR).\n7. Kakak mungkin diminta untuk memasukkan PIN, pola, atau sidik jari untuk konfirmasi.\n8. Setelah itu, Kakak akan melihat kode QR dan kata sandi Wi-Fi akan muncul di bawah kode QR tersebut.')"> Cek Kata Sandi WiFi - Android</button>
+  	<button class="button" onclick="copyText('Berikut panduan mengecek kata sandi WiFi yang saat ini terhubung pada iPhone:\n\n1. Buka aplikasi Pengaturan di iPhone Kakak.\n2. Ketuk Wi-Fi.\n3. Temukan jaringan Wi-Fi yang sedang Kakak gunakan.\n4. Ketuk tombol Info (ikon huruf i di samping jaringan).\n5. Ketuk bidang Kata Sandi.\n6. Gunakan kode sandi, Face ID, atau Touch ID untuk membuka kunci dan menampilkan kata sandi.')"> Cek Kata Sandi WiFi - iPhone</button>
+        </div>
+      </div>
+    
+    <div class="box">
+      <div class="box-label" style="text-align: center;">Billing</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik, mohon bantuannya untuk melampirkan bukti pembayaran yang mengindikasikan keterangan transaksi berhasil ya Kak.')">Tanya Bukti Bayar</button>        
+        <button class="button" onclick="copyText('Terima kasih atas lampirannya ya Kak. Kami akan lakukan pengecekan terlebih dahulu. Mohon kesediaannya menunggu.')">TQ dan Hold Pengecekan</button>        
+      </div>
+     <div class="button-row">
+        <button class="button" onclick="copyText('Berdasarkan hasil simulasi kami, saat ini tidak terdapat kendala pembayaran tagihan ICONNET.\n\nMohon untuk mencoba kembali pembayaran melalui kanal yang tersedia lainnya, seperti transfer antar bank (Mandiri), sesama bank (Mandiri, BCA, BRI, Muamalat, BNI, BSI), minimarket (Indomaret dan Alfamart), Lokapasar (Tokopedia, Blibli), atau dompet digital (GoPay, OVO, LinkAja).\n\nPastikan kode pembayaran, nama pelanggan, dan nominal sudah sesuai.')">Tidak Ada Kendala Pembayaran</button>        
+</div>
+<div class="box-label" style="text-align: center;">Kendala Pembayaran Salah Satu Metode</div>
+ 
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, terdapat indikasi bahwa yang mengalami kendala adalah sistem pembayaran dari XXX-nya, karena dari pengecekan kami, untuk simulasi dengan metode bayar lain tidak mengalami kendala.')">Metodenya yang Terkendala</button>        
+        <button class="button" onclick="copyText('Oleh karena itu, ICONNET menyediakan alternatif metode pembayaran apabila salah satunya terkendala, bisa menggunakan metode yang tersedia lainnya, seperti Alfamart dan Indomaret.')">Coba Metode Lain</button>        
+      </div>
+      <div class="box-label">Isolir</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Berdasarkan pengecekan, periode layanan telah berakhir dan terdapat tagihan baru yang belum dibayarkan sehingga layanan internet sementara dinonaktifkan. Agar layanan kembali aktif, mohon kesediaannya untuk melakukan pembayaran terlebih dahulu.')">Info Isolir - Umum</button>         
+        <button class="button" onclick="copyText('Berdasarkan pengecekan, periode layanan telah berakhir dan terdapat tagihan baru yang belum dibayarkan sehingga layanan internet sementara dinonaktifkan. Agar layanan kembali aktif, mohon kesediaannya untuk melakukan pembayaran terlebih dahulu.\n\nSebagai informasi, tagihan terbit tanggal 25 setiap bulan. Jika belum dibayarkan, maka internet akan dinonaktifkan sementara pada tanggal 6 bulan berikutnya sampai adanya pembayaran tagihan.')">Info Isolir - FDB</button>         
+      </div>
+<div class="button-row">
+	<button class="button" onclick="copyText('Apabila pembayaran sudah masuk pada sistem dan tidak terindikasi adanya gangguan internet, maka layanan bisa digunakan kembali.')">Apakah Setelah Bayar Bisa Lagi?</button>              
+	<button class="button" onclick="copyText('Baik Kak XXX, agar layanan internet yang sudah lama tidak digunakan kembali aktif, mohon untuk melakukan pembayaran tagihan terakhir yang kami kirimkan ke email terdaftar. Apabila pembayarannya langsung masuk pada sistem kami dan tidak terindikasi terjadi gangguan internet, maka layanan ICONNET dapat kembali digunakan.')">Aktifkan Kembali</button>     
+      </div>
+      <div class="box-label">Kliring</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Berdasarkan hasil pengecekan, kami informasikan bahwa saat ini proses pembayarannya masih dalam masa kliring dengan estimasi H+1 hari kalender sejak tanggal pembayaran.')">Info Kliring</button>
+        <button class="button" onclick="copyText('Kliring adalah proses pencocokan data transaksi antara sistem dari kanal pembayaran yang digunakan dengan sistem kami. Pada tahap ini sistem akan memastikan data pembayaran sudah sesuai.')">Jelasin Kliring</button>
+	        <button class="button" onclick="copyText('Oleh karena pembayaran dilakukan pada XXX, maka saat ini masih terhitung dalam estimasi kliring. ')">Tgl Bayar</button>
+        <button class="button" onclick="copyText('Apabila setelah melewati masa kliring layanan internetnya masih belum bisa digunakan, silakan hubungi kami kembali agar dilakukan pengecekan lebih lanjut')">Hubungi Lagi</button>        
+      </div>
+      <div class="box-label">Resend Invoice</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, kami sudah bantu kirimkan ulang tagihan/kode pembayaran ke email terdaftarnya. Silakan dicek pada kotak masuk atau spamnya ya Kak.')">Sudah Resend Invoice</button>
+        <button class="button" onclick="copyText('Mohon untuk melakukan pengecekan secara berkala pada email jika tagihannya belum diterima.')">Tunggu Dulu</button>
+      </div>
+<div class="box-label">Lain-lain</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, kami informasikan untuk tagihan terbarunya belum terbit, sehingga saat ini belum dapat melakukan pembayaran. Mohon menunggu hingga terbit tagihan baru ke email terdaftar pada XXX agar pembayarannya berhasil.')">Tunggu Terbit Tagihan Baru</button>
+        <button class="button" onclick="copyText('Kami sudah bantu untuk mengatasi kendala yang terjadi. Silakan dicoba kembali melakukan pembayaran melalui pilihan kanal yang tersedia.')">Resend Billing</button>
+      </div>      
+      <div class="button-row">
+        <button class="button" onclick="copyText('Terima kasih atas pembayarannya, Kak XXX.\n\nBerdasarkan pengecekan, pembayaran sudah masuk pada sistem dan internet aktif.\n\n\Jika internet masih tidak bisa digunakan, mohon dibantu untuk menonaktifkan dan mengaktifkan (restart) modem terlebih dahulu.')">Pembayaran Berhasil - Umum</button>
+        <button class="button" onclick="copyText('Terima kasih atas pembayarannya.\n\nBerdasarkan pengecekan, pembayaran sudah masuk pada sistem dan internet aktif. Jika internet masih tidak bisa digunakan, mohon dibantu untuk menonaktifkan dan mengaktifkan (restart) modem terlebih dahulu.\n\nSebagai informasi, agar terhindar dari pemutusan jaringan internet sementara di kemudian hari, mohon untuk melakukan pembayaran sebelum melewati masa tenggang (tanggal 5 di bulan berikutnya).')">Pembayaran Berhasil - FDB</button>
+    </div>    
+<div class="box-label">Metode Bayar</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Berikut panduan membayar tagihan dengan GoPay:\n\n1. Pastikan sudah mengunduh aplikasi PLN Mobile > buka aplikasi PLN Mobile.\n2. Pembayaran melalui GoPay dapat dilakukan untuk pendaftaran baru ICONNET maupun tagihan bulanan ICONNET (hanya melalui aplikasi PLN Mobile).\n3. Pilih menu Internet.\n4. Pilih Koneksi Saya, lalu klik pada bagian Nama Pelanggan.\n5. Pilih Bayar.\n6. Pilih Metode Pembayaran, kemudian pilih GoPay.\n7. Pastikan sudah memiliki aplikasi Gojek, saldo GoPay mencukupi, dan aplikasi dalam keadaan aktif/login.\n8. Masukkan PIN aplikasi Gojek untuk menyelesaikan pembayaran (biaya administrasi tertera pada aplikasi).\n9. Ikuti instruksi selanjutnya hingga transaksi berhasil.\n10. Transaksi selesai.')">GoPay</button>
+    </div>    
+
+    </div>    
+
+<div class="box">
+      <div class="box-label" style="text-align: center;">Panduan Pembayaran</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, kami informasikan pembayaran menggunakan aplikasi Livin by Mandiri sebagai berikut:\n\n1. Masuk ke aplikasi Livin by Mandiri\n2. Pilih Bayar/VA\n3. Masukkan kode VA Mandiri yang berawalan 89450\n4. Periksa nominal pembayaran\n5. Ketuk Lanjutkan, lalu ketuk Lanjut Bayar\n6. Masukkan pin\n7. Selesai')">Livin' by Mandiri</button>        
+       </div>      
+    </div>
+
+
+<div class="box">
+      <div class="box-label" style="text-align: center;">Gagal Unisolir</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, dapat kami informasikan bahwa pembayaran telah masuk pada sistem dan saat ini jaringan terputus sementara karena adanya keterlambatan pembayaran.')">Terputus Sementara</button>        
+        <button class="button" onclick="copyText('Sebagai informasi tambahan, mohon untuk melakukan pembayaran sebelum tanggal jatuh tempo agar Kakak dapat terus menikmati layanan ICONNET ke depannya.')">Jangan Telat Bayar</button>        
+        <button class="button" onclick="copyText('Saat ini perihal jaringan yang terputus untuk sementara telah kami buatkan tiket pelaporan dengan ID Tiket XXXXX agar dapat segera ditindaklanjuti.  Mohon kesediaannya menunggu ya Kak.')">Tunggu Unisolir</button>        
+        <button class="button" onclick="copyText('Mohon maaf, terkait durasi waktu tindak lanjut laporan tersebut belum dapat kami informasikan. Namun, kami akan upayakan untuk mempercepat prosesnya agar internet Kakak bisa digunakan kembali. Mohon kesediaannya menunggu ya Kak.')">Berapa Lama?</button>        
+       </div>      
+ <div class="button-row">
+        <button class="button" onclick="copyText('Kami informasikan untuk laporan tersebut akan ditindaklanjuti dengan estimasi maksimal 1x24 jam.')">SLA Keluhan Isolir di atas 23:00 WIB</button>          
+	<button class="button" onclick="copyText(Silakan menghubungi kami kembali apabila setelah melewati estimasi tersebut internetnya masih belum bisa digunakan agar dilakukan pengecekan lebih lanjut.')">Hubungi Lagi</button>
+       </div>      
+
+    </div>
+
+    <div class="box">
+      <div class="box-label" style="text-align: center;">Unisolir</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Terkait kendalanya, saat ini sudah kami bantu tindak lanjuti. Mohon bantuannya untuk menonaktifkan dan mengaktifkan kembali perangkat modemnya agar internet bisa diakses kembali.')">Sudah Unisolir</button>        
+        <button class="button" onclick="copyText('Sebagai informasi tambahan, mohon untuk melakukan pembayaran sebelum tanggal jatuh tempo agar terhindar dari pemutusan jaringan internet sementara ya Kak.')">Jangan Telat Bayar</button>        
+      </div>      
+    </div>    
+
+   <div class="box">
+      <div class="box-label" style="text-align: center;">Pengembalian Dana/Refund</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik, kami informasikan bahwa proses pengembalian dana (refund) memiliki estimasi 7 hari kerja (tidak termasuk Sabtu, Minggu, dan hari libur nasional) setelah email persetujuan refund diterima.\n\nMohon lakukan pengecekan mutasi dana secara berkala. Jika setelah melewati estimasi dana belum diterima, Kakak dapat menghubungi kami kembali untuk pengecekan lebih lanjut.')">SLA Refund</button>        
+      </div>      
+    </div>    
+
+<div class="box">
+      <div class="box-label" style="text-align: center;">Lain-lain</div>
+      <div class="button-row">
+        <button class="button" onclick="copyText('Baik Kak, kami informasikan bahwa dalam rangka meningkatkan kemudahan dan konsistensi layanan, mulai 25 November 2025 terdapat perubahan pada siklus tagihan ICONNET dengan ketentuan berikut:\n\n- Tagihan terbit tanggal 25 setiap bulan.\n- Jatuh tempo pembayaran di akhir bulan.\n- Layanan dinonaktifkan sementara setiap tanggal 6 bulan berikutnya apabila pembayaran belum dilakukan.')">Info<br/>Fixed Date Billing</button>        
+        <button class="button" onclick="copyText('Sebagai acuan, periode penggunaan internet dihitung dari awal hingga akhir bulan, dengan masa tenggang pembayaran 5 hari di awal bulan berikutnya. Jika hingga tanggal 6 belum dilakukan pembayaran, layanan akan dinonaktifkan sementara.')">Gak Full 1 Bulan Ya?</button>        
+      </div>      
+      <div class="button-row">
+        <button class="button" onclick="copyText('Terkait perubahan email atau nomor terdaftar, terdapat ketentuan untuk menginformasikan data pelanggan seperti ID Pelanggan/PLN, nama, dan nomor/email terdaftar yang sesuai.\n\nJika tidak dapat menginformasikan nomor/email terdaftar, maka terdapat opsi melampirkan foto KTP terdaftar dan bagian belakang modem, dengan tetap menginformasikan ID Pelanggan dan nama terdaftarnya.')">Syarat Ubah Data</button>        
+        <button class="button" onclick="copyText('Untuk memastikan kualitas koneksi tetap stabil dan optimal, layanan dari ICONNET dirancang menggunakan perangkat modem/router yang sudah kami sediakan dan konfigurasi sesuai standar jaringan kami.\n\nPenggunaan perangkat tambahan atau modem dari provider lain berada di luar standar layanan kami, sehingga berpotensi menyebabkan ketidakstabilan koneksi atau kendala tertentu yang cukup sulit untuk kami identifikasi secara menyeluruh.\n\nAgar pengalaman internet tetap maksimal dan proses penanganan gangguan bisa lebih cepat dan akurat, kami menyarankan penggunaan perangkat resmi dari ICONNET sebagai perangkat utama ya Kak.')">Minta Modem Tambahan</button>
+        <button class="button" onclick="copyText('Baik Kak XXX, kami informasikan untuk penggunaan router/modem tambahan yang digunakan untuk memperluas jaringan ke pengguna lain (di luar pelanggan terdaftar), hal tersebut tidak sesuai dengan ketentuan penggunaan layanan ICONNET.\n\nLayanan yang kami sediakan bersifat untuk penggunaan pribadi sesuai data pelanggan yang terdaftar, sehingga pendistribusian ulang koneksi ke pihak lain tidak diperbolehkan ya Kak.\n\nSelain berpotensi menimbulkan gangguan jaringan, kondisi tersebut juga membuat kualitas layanan tidak dapat kami jaga secara optimal. Selain itu, perangkat di luar standar kami tidak dapat terpantau oleh sistem, sehingga apabila terjadi kendala, proses pengecekan menjadi tidak optimal.')">Distribusi Jaringan (Ilegal)</button>        
+    </div>    
+      <div class="button-row">
+        <button class="button" onclick="copyText('Berdasarkan pengecekan, sebelumnya Kakak mendapatkan promo diskon tagihan XXX% atau RpXXX dari harga normal XXX menjadi XXX untuk satu tahun.\n\nNamun, promo tersebut sudah berakhir untuk periode penggunaan hingga XXX. Oleh karena itu, tagihan saat ini dan seterusnya kembali normal menjadi XXX (belum termasuk PPN 11%) atau XXX (sudah termasuk PPN 11%).')">Yearly Retention</button>   
+        <button class="button" onclick="copyText('Berdasarkan pengecekan, sebelumnya Kakak terdaftar sebagai pelanggan yang mendapatkan program promo dengan diskon tagihan selama 12 bulan berjalan.\n\nKarena saat ini sudah masuk bulan ke-13, maka tagihan internet kembali normal mengikuti paket XXX yang digunakan, yaitu XXX per bulan (belum termasuk PPN 11%).')">Sebelumnya Terdaftar<br/>ICONNET Seru-3</button>   
+</div>
+    </div>    
+
+   
+  </div>   
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      event.target.classList.add('blink');
+      setTimeout(function() {
+        event.target.classList.remove('blink');
+      }, 500);
+    }
+  </script>
+</body>
+</html>
